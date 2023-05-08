@@ -1,0 +1,156 @@
+:root {
+  --primary-color: #0F5A41;
+  --background-color: #EEEEEE;
+  --button-color: #066344;
+  --button-color-hover: #0c4834;
+
+  font-family: Arial, sans-serif;
+}
+
+/*FORMATACAO DO CORPO*/
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+}
+/*FIM FORMATACAO DO CORPO*/
+
+/*FORMATACAO DO HEADER DE TITULO DA PAGINA*/
+header {
+  background-color: var(--primary-color);
+  color: #fff;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*FIM FORMATACAO DO HEADER DE TITULO DA PAGINA*/
+
+/*FORMATACAO DO POST-IT*/
+.post-it {
+  background-color: #FEE082;
+  border: 2px solid #B28501;
+  box-shadow: 1px 10px 10px rgba(0, 0, 0, .3);
+  border-radius: 5px;
+  padding: 0 10px 10px 10px;
+  margin: 10px;
+  width: 210px;
+  position: relative;
+  float: right;
+  text-align: justify;
+  font-size: 13px;
+}
+.post-it > p {
+  text-indent: 20px;
+}
+/*FIM FORMATACAO DO POST-IT*/
+
+input#chave-acesso {
+  display: block;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+.botao {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  padding: 10px;
+  text-align: center;
+  border: none;
+  background-color: var(--button-color);
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.botao:hover {
+  background-color: var(--button-color-hover);
+  cursor: pointer;
+}
+
+main {
+  max-width: 500px;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #6D6E88;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px #6D6E88;
+  background-color: white;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+select {
+  display: block;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+#links {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#links a {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  padding: 10px;
+  text-align: center;
+  border: none;
+  background-color: var(--button-color);
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#links a:hover {
+  background-color: var(--button-color-hover);
+}
+
+#btn_nota_consulta {
+  float: right;
+  padding: 6px;
+  font-size: 15px;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: #fff;
+  text-align: right;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+a#autor {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  vertical-align: middle;
+}

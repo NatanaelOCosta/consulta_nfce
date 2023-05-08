@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>Consulta chave de acesso NFC-e</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen"/>
+  </head>
+  <body>
+    <header>
+      <h2>Consulta chave de acesso NFC-e</h2>
+    </header>
+
+    <div class="post-it">
+      <h4 align="center">Bem-vindo(a) ao nosso sistema!<br/> Aqui estão as instruções para ajudá-lo(a) a usá-lo:</h4>
+      <p>Se você sabe o estado da consulta NFC-e que deseja acessar, basta selecionar o estado correspondente no campo "Buscar URL de acesso".</p>
+      <p>Se você quiser fazer uma busca automatizada ou não sabe o estado correto, é só inserir a chave no campo correspondente e apertar a tecla 'Enter' do seu teclado ou clicar em qualquer lugar da página. O sistema retornará a UF de origem da NFC-e e a URL de consulta correspondente.</p>
+      <p>Depois disso, clique em "Clique aqui para consultar a NFC-e" e você será redirecionado(a) para a página de consulta do estado selecionado.</p>
+    </div>
+
+    <main>
+      <div id="verifica_uf">
+        <p align="center" id="titulo"><strong>Informe a chave NFC-e para verificar a UF e a URL correspondente</strong></p>
+        <label for="chave-acesso"><strong>Chave de acesso:</strong></label>
+        <input type="text" id="chave-acesso" size=45>
+        <center><p id="uf-origem"></p></center>
+      </div>
+
+      <strong><label for="estado">Buscar URL de acesso</label></strong>
+      <select id="estado">
+        <option value="">Selecione o estado</option>
+        <option value="33">Rio de Janeiro - RJ</option>
+        <option value="35">São Paulo - SP</option>
+        <option value="31">Minas Gerais - MG</option>
+        <option value="12">Acre - AC</option>
+        <option value="13">Amazonas - AM</option>
+        <option value="16">Amapá - AP</option>
+        <option value="27">Alagoas - AL</option>
+        <option value="29">Bahia - BA</option>
+        <option value="32">Espírito Santo - ES</option>
+        <option value="52">Goiás - GO</option>
+        <option value="21">Maranhão - MA</option>
+        <option value="51">Mato Grosso - MT</option>
+        <option value="50">Mato Grosso do Sul - MS</option>
+        <option value="11">Rondônia - RO</option>
+        <option value="14">Roraima - RR</option>
+        <option value="24">Rio Grande do Norte - RN</option>
+        <option value="43">Rio Grande do Sul - RS</option>
+        <option value="42">Santa Catarina - SC</option>
+        <option value="26">Pernambuco - PE</option>
+        <option value="22">Piauí - PI</option>
+        <option value="15">Pará - PA</option>
+        <option value="41">Paraná - PR</option>
+        <option value="25">Paraíba - PB</option>
+        <option value="23">Ceará - CE</option>
+        <option value="17">Tocantins - TO</option>
+        <option value="28">Sergipe - SE</option>
+      </select>
+      
+      <div id="links"></div>
+
+      <input type="button" class="botao" id="btn_nota_consulta" value="Nova consulta" onClick="window.location.reload()">
+    </main>
+    
+    <footer>
+      <p>Developed by <a href="https://www.linkedin.com/in/natanael-o-costa/" target="_blank" id="autor">Natanael Costa</a></p>
+    </footer>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
